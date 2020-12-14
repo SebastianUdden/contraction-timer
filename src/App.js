@@ -16,6 +16,7 @@ const InnerWrapper = styled.div`
 `;
 const Timer = styled.p`
   font-size: 40px;
+  text-align: center;
   padding: 20px;
   border: 1px solid white;
   border-radius: 6px;
@@ -82,7 +83,7 @@ function App() {
         <Timer active={active}>{timer}</Timer>
         <Buttons>
           {!active && <Button onClick={() => setActive(true)}>Start</Button>}
-          {active && <Button onClick={() => setActive(false)}>Pause</Button>}
+          {active && <Button onClick={() => setActive(false)}>Stop</Button>}
           {<Reset onClick={handleReset}>Reset</Reset>}
         </Buttons>
       </InnerWrapper>
