@@ -33,6 +33,7 @@ const Button = styled.button`
   border-radius: 6px;
   font-weight: 700;
   border: none;
+  cursor: pointer;
   :first-child {
     margin-right: 5px;
   }
