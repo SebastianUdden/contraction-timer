@@ -67,6 +67,7 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   margin-right: 5px;
+  background-color: #fefefe;
   :last-child {
     margin: 0;
   }
