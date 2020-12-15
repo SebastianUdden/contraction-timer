@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { formatTime } from "./utils";
 
-const Item = styled.li`
+const Wrapper = styled.li`
   border-bottom: 1px solid #000;
 `;
 const Button = styled.button`
@@ -53,10 +53,10 @@ const Between = styled(P)`
 `;
 const Text = styled.strong``;
 
-export default ({ list, time, start, end, index }) => {
+const Item = ({ list, time, start, end, index }) => {
   const [showDetails, setShowDetails] = useState(false);
   return (
-    <Item>
+    <Wrapper>
       <Button
         onClick={(e) => {
           e.stopPropagation();
@@ -84,6 +84,8 @@ export default ({ list, time, start, end, index }) => {
           </Between>
         )}
       </Button>
-    </Item>
+    </Wrapper>
   );
 };
+
+export default Item;
